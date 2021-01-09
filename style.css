@@ -1,0 +1,82 @@
+
+nav{
+    background-color: lightgray;
+    height: 50px;
+    
+    
+}
+nav li{
+    text-decoration: none;
+    list-style: none;
+    padding: 10px;
+    line-height: 30px;
+    font-size: 18px;
+}
+nav a{
+    text-decoration: none;
+
+}
+nav>ul>li{
+    float: left;
+}
+
+nav li:hover{
+    color: cyan;
+    background: darkgray;
+}
+.dropdown{
+    display: none;
+    margin: 0;
+    position: absolute;
+    background-color: lightblue;
+}
+.dropdown li{
+    margin: 0;
+    padding: 0;
+}
+.dropdown li:hover{
+    background-color: gray;
+}
+nav >ul>li:hover ul{
+    display: block;
+}
+.box{
+    border: 1px solid purple;
+    width: 200px;
+    height: 200px;
+    transition: width 3s e 1s;
+}
+.box:hover{
+    width: 500px;
+}
+.outer{
+  
+    background-color: gray;
+    text-align: center;
+    
+}
+.inner{
+    background-color: aqua;
+    transform: scale(.50) rotate(45deg) ;
+    
+}
+
+.bat{
+    transition: transform .3s ease-in .2s;
+}
+.field:hover .bat{
+    transform: rotate(-60deg);
+    transform-origin: (2000%, 0%);
+}
+.ball{
+    height: 25px;
+    width: 25px;
+    background-color: red;
+    border-radius: 50%;
+    position: relative;
+    left: 330px;
+    transition: transform 1s ease-in-out .5s;
+}
+.field:hover .ball{
+    transform: translate(1000px, -200px);
+}
